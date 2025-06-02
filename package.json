@@ -1,0 +1,12 @@
+{
+  "name": "seo-audit-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently -c \"blue,green\" -n \"SERVER,CLIENT\" \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "npm --prefix client start"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
